@@ -1,8 +1,8 @@
 <div class="calendar-wrapper">
   <mat-card class="demo-inline-calendar-card">
-    <mat-calendar [(selected)]="selected"></mat-calendar>
+    <mat-calendar #calendar [(selected)]="selectedDate"></mat-calendar>
   </mat-card>
-  <p class="selected-date">Selected date: {{ selected }}</p>
+  <p class="selected-date">Selected date: {{ selectedDate }}</p>
   <button type="button" class="change-date-button" (click)="changeDate()">
     CHANGE DATE
   </button>
